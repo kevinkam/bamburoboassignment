@@ -1,0 +1,4 @@
+{
+  "presets": [["@babel/stage-0", {"decoratorsLegacy": true}], "@babel/env", "@babel/react", "@babel/typescript"],
+  "plugins": ["@babel/plugin-proposal-class-properties"]
+}
