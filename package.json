@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prod": "webpack --config webpack.config.prod.js",
+    "serve-prod": "webpack-dev-server --config webpack.config.prod.js --port 8080",
     "dev": "webpack-dev-server --config webpack.config.dev.js --port 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

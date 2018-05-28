@@ -11,6 +11,14 @@ module.exports = {
     filename: "[name].js",
     publicPath: "/dist/"
   },
+  devServer: {
+    publicPath: "/dist/",
+    compress: true,
+    port: 8080,
+    historyApiFallback: {
+      rewrites: [{ from: /./, to: "/dist/index.html" }]
+    }
+  },
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: [".ts", ".tsx", ".js", ".json"],
